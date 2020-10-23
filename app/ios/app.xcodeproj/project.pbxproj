@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* appTests.m */; };
+		0F6B4C7325421378002E12A1 /* tenor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0F6B4C7225421377002E12A1 /* tenor.mp4 */; };
+		0F6B4CFD254274DC002E12A1 /* RNTVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B4CFC254274DC002E12A1 /* RNTVideoManager.m */; };
+		0F6B4D71254288C1002E12A1 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B4D70254288C1002E12A1 /* VideoView.m */; };
 		122EF98F7984124E9A20BC4E /* libPods-app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 779F14E296C194FB01BD8462 /* libPods-app-tvOS.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -45,6 +48,10 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTests.m; sourceTree = "<group>"; };
 		02FD32097B3CF081664A59E9 /* Pods-app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-app-tvOS/Pods-app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0F6B4C7225421377002E12A1 /* tenor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tenor.mp4; sourceTree = "<group>"; };
+		0F6B4CFC254274DC002E12A1 /* RNTVideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNTVideoManager.m; path = app/RNTVideoManager.m; sourceTree = "<group>"; };
+		0F6B4D6F2542889B002E12A1 /* VideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VideoView.h; path = app/VideoView.h; sourceTree = "<group>"; };
+		0F6B4D70254288C1002E12A1 /* VideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VideoView.m; path = app/VideoView.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = app/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = app/AppDelegate.m; sourceTree = "<group>"; };
@@ -126,12 +133,16 @@
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				0F6B4C7225421377002E12A1 /* tenor.mp4 */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0F6B4CFC254274DC002E12A1 /* RNTVideoManager.m */,
+				0F6B4D6F2542889B002E12A1 /* VideoView.h */,
+				0F6B4D70254288C1002E12A1 /* VideoView.m */,
 			);
 			name = app;
 			sourceTree = "<group>";
@@ -194,7 +205,6 @@
 				847A32819B84CAD7E8F3ED96 /* Pods-app-tvOSTests.debug.xcconfig */,
 				6C23D06B453DDD5E65569A02 /* Pods-app-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,7 +304,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1210;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -340,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6B4C7325421378002E12A1 /* tenor.mp4 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -569,6 +580,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				0F6B4D71254288C1002E12A1 /* VideoView.m in Sources */,
+				0F6B4CFD254274DC002E12A1 /* RNTVideoManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = app;
+				SWIFT_OBJC_BRIDGING_HEADER = "app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -688,6 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = app;
+				SWIFT_OBJC_BRIDGING_HEADER = "app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
