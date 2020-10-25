@@ -25,7 +25,7 @@
 }
 
 -(void) createVideoViewController {
-  NSURL *videoURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"tenor" ofType:@"mp4"]];
+  NSURL *videoURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"hello" ofType:@"mp4"]];
   
   AVPlayerItem *item = [AVPlayerItem playerItemWithURL:videoURL];
   AVPlayer *player = [AVPlayer playerWithPlayerItem:item];
@@ -37,3 +37,4 @@
   }];
 }
 @end
+
