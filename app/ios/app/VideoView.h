@@ -7,4 +7,6 @@
 
 #import <UIKit/UIKit.h>
 @interface VideoView : UIView
+-(void)initializePlayer;
+-(void)play;
 @end
