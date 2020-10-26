@@ -9,16 +9,31 @@
 #import "VideoView.h"
 
 @interface RTNVideoManager: RCTViewManager
+@property VideoView *videoView;
 @end
 
 @implementation RTNVideoManager
 RCT_EXPORT_MODULE(RNTVideo)
+RCT_EXPORT_METHOD(pushPlay)
+{
+  [self.videoView play];
+}
+
+RCT_EXPORT_METHOD(pushPause)
+{
+  [self.videoView pause];
+}
+
+RCT_EXPORT_METHOD(pushSeek)
+{
+  [self.videoView seek];
+}
 
 - (UIView *) view {
-  VideoView *videoView = [[VideoView alloc] init];
-  [videoView initializePlayer];
-  [videoView play];
-  return videoView;
+  [self setVideoView:[[VideoView alloc] init]];
+  [self.videoView initializePlayer];
+  [self.videoView play];
+  return self.videoView;
 }
 
 @end

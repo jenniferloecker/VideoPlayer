@@ -9,4 +9,6 @@
 @interface VideoView : UIView
 -(void)initializePlayer;
 -(void)play;
+-(void)pause;
+-(void)seek;
 @end

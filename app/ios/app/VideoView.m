@@ -31,4 +31,14 @@
 -(void)play {
   [self.player play];
 }
+
+-(void)pause {
+  [self.player pause];
+}
+
+//TODO Implement a true seeking function
+-(void)seek {
+  [self.player setRate:2];
+}
+
 @end
